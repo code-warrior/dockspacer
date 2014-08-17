@@ -38,5 +38,8 @@ int main( int argc, char **argv )
       printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL ) :
       create_dockspacer( &amount );
 
+   free( copy_of_input );
+   copy_of_input = NULL;
+
    return 0;
 }
