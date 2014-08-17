@@ -30,14 +30,18 @@ int main( int argc, char **argv )
       exit( -1 );
    }
 
-   // Copy the user input
+   // Set memory aside in order to make a copy of the user’s input
    copy_of_input = malloc( strlen( input ) * sizeof( char ) );
+
+   // Copy the user input
    strncpy( copy_of_input, trim( input ), strlen( input ) );
 
+   // If stoi returns -1, then generate an error. Otherwise, create the spacers.
    ( -1 == ( amount = stoi( copy_of_input ) ) ) ?
       printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL ) :
       create_dockspacer( &amount );
 
+   // Free the memory set aside for the copy
    free( copy_of_input );
    copy_of_input = NULL;
 
