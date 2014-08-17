@@ -17,3 +17,4 @@ This Terminal-level program creates empty items in your Dock that you can use as
 
 ## Verified On...
 * Mac OS X 10.8.5
+* Mac OS X 10.9.4
