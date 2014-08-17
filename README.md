@@ -9,7 +9,7 @@ This Terminal-level program creates empty items in your Dock that you can use as
 ## Installation
 Unzip the file and run `dockspacer` from The Terminal:
 
-    $ ./dockpacer`
+    $ ./dockpacer
 
 ## Todo
 - Finish sanitizing user input
