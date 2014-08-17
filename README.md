@@ -13,7 +13,7 @@ This Terminal-level program creates empty items in your Dock that you can use as
 2. Open The Terminal and navigate into the unzipped folder
 3. Run `dockspacer` from The Terminal:
 
-    $ ./dockspacer
+     `$ ./dockspacer`
 
-## Todo
-- Finish sanitizing user input
+## Verified On...
+* Mac OS X 10.8.5
