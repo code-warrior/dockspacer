@@ -9,7 +9,7 @@ This Terminal-level program creates empty items in your Dock that you can use as
 — Roy Vanegas
 
 ## Installation
-1. Download and unzip the “dockspacer-master.zip” file from the “Download ZIP” link
+1. Download and unzip the `dockspacer-master.zip` file from the “Download ZIP” link
 2. Open The Terminal and navigate into the unzipped folder
 3. Run `dockspacer` from The Terminal:
 
