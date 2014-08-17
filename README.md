@@ -6,7 +6,7 @@ This Terminal-level program creates empty items in your Dock that you can use as
 
 **Note**: This program does not remove any Dock items you create; you’ll need to remove unwanted Dock spacers manually.
 
-— Roy Vanegas
+— Roy Vanegas (roy@thecodeeducators.com)
 
 ## Installation
 1. Download and unzip the `dockspacer-master.zip` file from the “Download ZIP” link
