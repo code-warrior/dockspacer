@@ -15,6 +15,8 @@ This Terminal-level program creates empty items in your Dock that you can use as
 
      `$ ./dockspacer`
 
+4. Your computer will flash when it’s done. This is the result of restarting the Dock, and is normal.
+
 ## Verified On...
 * Mac OS X 10.8.5
 * Mac OS X 10.9.4
