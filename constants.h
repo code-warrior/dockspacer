@@ -37,5 +37,7 @@
 
 #define INVALID_INPUT -1
 #define MAX_STRING    80
+#define APPLICATION_AREA 1
+#define RECYCLE_BIN_AREA 2
 
 #endif
