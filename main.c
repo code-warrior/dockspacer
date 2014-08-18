@@ -38,8 +38,9 @@ int main( int argc, char **argv )
    strncpy( copy_of_input, trim( input ), strlen( input ) );
 
    // If stoi returns -1, then generate an error. Otherwise, create the spacers.
-   ( -1 == ( amount = stoi( copy_of_input ) ) ) ?
-      printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL ) :
+   if( -1 == ( amount = stoi( copy_of_input ) ) )
+      printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
+   else
       create_dockspacer( &where, &amount );
 
    // Free the memory set aside for the copy
