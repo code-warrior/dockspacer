@@ -17,7 +17,7 @@ int main( int argc, char **argv )
    int where = APPLICATION_AREA;
    char *copy_of_input;
 
-   printf( "\n\nThis program creates empty items in your Dock that you can use as spacers. After you enter the amount of spacers you want, the Dock will flash and you will have your new spacers near the Recycle Bin. You can then move them as you would any other Dock item.\n\n%s%s Note %s This program does not remove any Dock items. You’ll need to remove unwanted Dock spacers manually.\n\nYou may cancel this program with the keyboard sequence CNTRL + C, or enter the number 0.\n\nHow many spacers would you like? ", RED, BGYELLOW, NORMAL );
+   printf( "\n\n%s How many spacers would you like? %s ", BGGRAY, NORMAL );
 
    // Get user input
    fgets( input, sizeof( input ), stdin );
@@ -40,8 +40,45 @@ int main( int argc, char **argv )
    // If stoi returns -1, then generate an error. Otherwise, create the spacers.
    if( -1 == ( amount = stoi( copy_of_input ) ) )
       printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
-   else
-      create_dockspacer( &where, &amount );
+   else {
+      char choice[ 20 ];
+      int input_length;
+
+      /* THE USER MENU */
+   user_choice:
+      printf( "\n%s Where would you like to add your spacers? %s \n"
+             " — In the %s a %s pplication section (typically on the left, if your Dock is on the bottom)\n"
+             " — Near the %s r %s ecycle bin (typically on the right, if your Dock is on the bottom)\n"
+             " — (Enter %s q %s to quit)\n", BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL );
+
+      scanf( "%s", choice );
+
+      input_length = strlen( choice );
+
+      if( input_length == 1 ) {
+         if( strncmp( choice, "a", 1 ) == 0 ) {
+            create_dockspacer( &where, &amount );
+         }
+         else
+            if( strncmp( choice, "r", 1 ) == 0 ) {
+               where = RECYCLE_BIN_AREA;
+               create_dockspacer( &where, &amount );
+            }
+            else
+               if( strncmp( choice, "q", 1 ) == 0 ) {
+                  printf( "Quitting\n" );
+                  exit( 0 );
+               }
+               else {
+                  printf( "Invalid character. Try again. (Enter 'q' to quit.)\n" );
+                  goto user_choice;
+               }
+      }
+      else {
+         printf( "Invalid input. Try again. (Enter 'q' to quit.)\n" );
+         goto user_choice;
+      }
+   }
 
    // Free the memory set aside for the copy
    free( copy_of_input );
