@@ -7,7 +7,7 @@
 #include "constants.h"
 
 /*
-   Build command: gcc main.c libs/dockspacer.c libs/trim.c libs/stoi.c -o dockspacer
+   Build: gcc main.c libs/dockspacer.c libs/trim.c libs/stoi.c -o dockspacer
 */
 
 int main( int argc, char **argv )
