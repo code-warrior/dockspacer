@@ -14,7 +14,7 @@ int main( int argc, char **argv )
 {
    char input[ MAX_STRING ];
    int amount;
-   int where = APPLICATION_AREA;
+   int where = APPLICATION_AREA; // Set the application area as the default
    char *copy_of_input;
 
    printf( "\n\n%s How many spacers would you like? %s ", BGGRAY, NORMAL );
@@ -46,7 +46,7 @@ int main( int argc, char **argv )
       char choice[ 20 ];
       int input_length;
 
-      /* THE USER MENU */
+   /* THE USER MENU */
    user_choice:
       printf( "\n%s Where would you like to add your spacers? %s \n"
              " — In the %s a %s pplication section (typically on the left, if your Dock is on the bottom)\n"
