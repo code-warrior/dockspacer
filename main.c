@@ -28,13 +28,15 @@ int main( int argc, char **argv )
    // assigned in the previous statement), then nothing was entered at the
    // prompt. Exit.
    if( strlen( input ) == 1 ) {
-      printf( "%s%s Empty entry. %s%s Please run this program again... %s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
+      printf( "%s%s Empty entry. %s%s Please run this program again... %s\n",
+         RED, BGYELLOW, NORMAL, RED, NORMAL );
       exit( -1 );
    }
 
    // If stoi returns -1, then generate an error. Otherwise, create the spacers.
    if( -1 == ( amount = stoi( input ) ) )
-      printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
+      printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n",
+         RED, BGYELLOW, NORMAL, RED, NORMAL );
    else {
       char choice[ 20 ];
       int input_length;
