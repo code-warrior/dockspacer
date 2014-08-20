@@ -15,7 +15,6 @@ int main( int argc, char **argv )
    char input[ MAX_STRING ];
    int amount;
    int where = APPLICATION_AREA; // Set the application area as the default
-   char *copy_of_input;
 
    printf( "\n\n%s How many spacers would you like? %s ", BGGRAY, NORMAL );
 
@@ -33,14 +32,8 @@ int main( int argc, char **argv )
       exit( -1 );
    }
 
-   // Set memory aside in order to make a copy of the user’s input
-   copy_of_input = malloc( strlen( input ) * sizeof( char ) );
-
-   // Copy the user input
-   strncpy( copy_of_input, trim( input ), strlen( input ) );
-
    // If stoi returns -1, then generate an error. Otherwise, create the spacers.
-   if( -1 == ( amount = stoi( copy_of_input ) ) )
+   if( -1 == ( amount = stoi( input ) ) )
       printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
    else {
       char choice[ 20 ];
@@ -81,10 +74,6 @@ int main( int argc, char **argv )
          goto user_choice;
       }
    }
-
-   // Free the memory set aside for the copy
-   free( copy_of_input );
-   copy_of_input = NULL;
 
    return 0;
 }
