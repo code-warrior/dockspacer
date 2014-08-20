@@ -19,13 +19,15 @@ int main( int argc, char **argv )
 
    printf( "\n\n%s How many spacers would you like? %s ", BGGRAY, NORMAL );
 
-   // Get user input
+   // Get the user’s input, inside a container MAX_STRING in length
    fgets( input, sizeof( input ), stdin );
 
    // Replace the newline char with the null character
    input[ strlen( input ) ] = '\0';
 
-   // If user input contains only one character (the null character), then nothing was entered at the prompt. Exit.
+   // If the user’s input contains only one character (the null character
+   // assigned in the previous statement), then nothing was entered at the
+   // prompt. Exit.
    if( strlen( input ) == 1 ) {
       printf( "%s%s Empty entry. %s%s Please run this program again... %s\n", RED, BGYELLOW, NORMAL, RED, NORMAL );
       exit( -1 );
