@@ -44,9 +44,12 @@ int main( int argc, char **argv )
    /* THE USER MENU */
    user_choice:
       printf( "\n%s Where would you like to add your spacers? %s \n"
-             " — In the %s a %s pplication section (on the left, if your Dock is on the bottom)\n"
-             " — Near the %s r %s ecycle bin (on the right, if your Dock is on the bottom)\n"
-             " — (Enter %s q %s to quit)\n", BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL );
+             " — In the %s a %s pplication section"
+             " (on the left, if your Dock is on the bottom)\n"
+             " — Near the %s r %s ecycle bin"
+             " (on the right, if your Dock is on the bottom)\n"
+             " — (Enter %s q %s to quit)\n",
+             BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL, BGGRAY, NORMAL );
 
       scanf( "%s", choice );
 
