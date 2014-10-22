@@ -20,3 +20,4 @@ This Terminal-level program creates empty items in your Dock — either in the A
 ## Verified On...
 * Mac OS X 10.8.5
 * Mac OS X 10.9.4
+* Mac OS X 10.10
