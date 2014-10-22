@@ -18,6 +18,6 @@ This Terminal-level program creates empty items in your Dock — either in the A
 4. Your computer will flash when it’s done. This is the result of restarting the Dock and is normal.
 
 ## Verified On...
-* Mac OS X 10.8.5
-* Mac OS X 10.9.4
 * Mac OS X 10.10
+* Mac OS X 10.9.4
+* Mac OS X 10.8.5
