@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "libs/trim.h"
 #include "libs/stoi.h"
 #include "libs/dockspacer.h"
 #include "constants.h"
