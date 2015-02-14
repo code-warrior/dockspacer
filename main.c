@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sting.h>
+#include <string.h>
 
 #include "libs/stoi.h"
 #include "libs/dockspacer.h"
