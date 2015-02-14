@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 # Dockspacer for Mac OS X
 
-v0.1.0
+v0.1.1
 
 ![Dockspacer screenshot](img/dockspacer.png "Dockspacer screenshot")
 
