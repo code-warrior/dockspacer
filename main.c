@@ -7,7 +7,7 @@
 
 /*
 
-Build: gcc -Wall main.c libs/dockspacer.c libs/trim.c libs/stoi.c -o dockspacer
+Build: gcc -Wall main.c libs/dockspacer.c libs/stoi.c -o dockspacer
 
 */
 
