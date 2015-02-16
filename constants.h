@@ -5,6 +5,7 @@
 #define RED       "\033[31m"
 #define BGYELLOW  "\033[43m"
 #define BGGRAY    "\033[100m"
+#define BOLDRED   "\033[31m\033[1m"
 
 #define INVALID_INPUT    -1
 #define MAX_STRING       80
