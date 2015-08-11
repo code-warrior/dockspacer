@@ -11,14 +11,29 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
 — Roy Vanegas (roy@thecodeeducators.com)
 
-## Installation
-1. Download and unzip the `dockspacer-master.zip` file from the “Download ZIP” link
-2. Open The Terminal and navigate to the unzipped folder
+## Installation (Easiest)
+
+1. You can download `dockspacer` by running the following command from The Terminal:
+
+      curl -OL https://github.com/code-warrior/dockspacer/blob/master/dockspacer
+
+2. Now, type the following and follow the instructions:
+
+      ./dockspacer
+
+3. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
+
+## Installation (Easy)
+
+1. Download and unzip the `dockspacer-master.zip` file from the “Download ZIP” link.
+
+2. Open The Terminal and navigate to the unzipped folder.
+
 3. Run `dockspacer` from The Terminal:
 
      `$ ./dockspacer`
 
-4. Your computer will flash when it’s done. This is the result of restarting the Dock and is normal.
+4. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
 ## Verified On...
 * Mac OS X 10.10
