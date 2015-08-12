@@ -15,11 +15,11 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
 1. You can download `dockspacer` by running the following command from The Terminal:
 
-      curl -OL https://github.com/code-warrior/dockspacer/blob/master/dockspacer
+      `curl -OL https://github.com/code-warrior/dockspacer/blob/master/dockspacer`
 
 2. Now, type the following and follow the instructions:
 
-      ./dockspacer
+      `./dockspacer`
 
 3. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
