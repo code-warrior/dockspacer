@@ -1,5 +1,5 @@
-#ifndef __COLORS_H__
-#define __COLORS_H__
+#ifndef __CONSTANTS_H__
+#define __CONSTANTS_H__
 
 #define NORMAL    "\033[0m"
 #define RED       "\033[31m"
