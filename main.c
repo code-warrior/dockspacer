@@ -88,7 +88,8 @@ int main( int argc, char **argv )
          }
       }
       else {
-         printf( "Invalid input. Try again. (Enter 'q' to quit.)\n" );
+         printf( "\n%s Invalid input. Try again. "
+                       "(Enter 'q' or 'Q' to quit.)%s\n\n", BOLDRED, BLACK );
          goto user_choice;
       }
    }
