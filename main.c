@@ -18,7 +18,7 @@ int main( int argc, char **argv )
    int amount;
    int where = APPLICATION_AREA; // Set the application area as the default
 
-   printf( "\n\n%s How many spacers would you like? %s ", BGGRAY, NORMAL );
+   printf( "\n\n%s How many spacers would you like? %s ", BLACK, BLACK );
 
    // Get the user’s input, inside a container MAX_STRING in length
    fgets( input, sizeof( input ), stdin );
@@ -26,32 +26,37 @@ int main( int argc, char **argv )
    // Replace the newline char with the null character
    input[ strlen( input ) ] = '\0';
 
-   // If the user’s input contains only one character (the null character
-   // assigned in the previous statement), then nothing was entered at the
-   // prompt. Exit.
-   if( strlen( input ) == 1 ) {
-      printf( "%s%s Empty entry. %s%s Please run this program again... %s\n",
-         RED, BGYELLOW, NORMAL, RED, NORMAL );
+   // If the user’s input contains only one character (the null character assigned in
+   // the previous statement), then nothing was entered at the prompt.
+   if( 1 == strlen( input ) ) {
+      printf( "\n%s Empty entry. Please run this program again...%s\n\n",
+         RED, BLACK );
       exit( -1 );
    }
 
-   // If stoi returns -1, then generate an error. Otherwise, create the spacers.
-   if( -1 == ( amount = stoi( input ) ) )
-      printf( "%s%s Invalid entry. %s%s Please run this program again...%s\n",
-         RED, BGYELLOW, NORMAL, RED, NORMAL );
+   if( INVALID_INPUT == ( amount = stoi( input ) ) ) {
+      printf("\n%s Invalid entry. Please run this program again...%s\n\n",
+             RED, BLACK);
+      exit( -1 );
+   }
    else {
       char choice[ 20 ];
       int input_length;
 
-   /* THE USER MENU */
-   user_choice:
-      printf( "\n%s Where would you like to add your spacers? (Enter your choice as the highlighted character below.) %s \n\n"
-             " — In the %sa%spplication section"
-             " (on the left, if your Dock is on the bottom)\n"
-             " — Near the %sr%secycle bin"
-             " (on the right, if your Dock is on the bottom)\n"
-             " — (Enter %sq%s to quit)\n",
-             BGGRAY, NORMAL, BOLDRED, NORMAL, BOLDRED, NORMAL, BOLDRED, NORMAL );
+      // The User Input Menu
+      user_choice:
+      printf( "\n%s Where would you like to add your spacers? (Enter your choice as "
+                    "the highlighted character below.) %s \n\n"
+                    " — In the %sa%spplication section"
+                    " (on the left, if your Dock is on the bottom)\n"
+                    " — Near the %sr%secycle bin"
+                    " (on the right, if your Dock is on the bottom)\n"
+                    " — (Enter %sq%s or %sQ%s to quit)\n",
+              BLACK, BLACK,   // First line
+              BOLDRED, BLACK, // Second line
+              BOLDRED, BLACK, // Third line
+              BOLDRED, BLACK, // Fourth line
+              BOLDRED, BLACK );
 
       scanf( "%s", choice );
 
