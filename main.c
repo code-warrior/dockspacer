@@ -55,12 +55,12 @@ int main( int argc, char **argv )
 
       input_length = strlen( choice );
 
-      if( input_length == 1 ) {
          if( strncmp( choice, "a", 1 ) == 0 ) {
             create_dockspacer( &where, &amount );
          }
          else
             if( strncmp( choice, "r", 1 ) == 0 ) {
+      if( 1 == input_length ) {
                where = RECYCLE_BIN_AREA;
                create_dockspacer( &where, &amount );
             }
