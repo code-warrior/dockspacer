@@ -34,6 +34,7 @@ int main( int argc, char **argv )
    }
    else {
       char choice[ 20 ];
+      char first_character_in_choice;
       int input_length;
 
       // The User Input Menu
@@ -61,6 +62,7 @@ int main( int argc, char **argv )
          else
             if( strncmp( choice, "r", 1 ) == 0 ) {
       if( 1 == input_length ) {
+         first_character_in_choice = choice[ 0 ];
                where = RECYCLE_BIN_AREA;
                create_dockspacer( &where, &amount );
             }
