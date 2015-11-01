@@ -6,12 +6,6 @@
 #include "libs/create_dockspacer.h"
 #include "constants.h"
 
-/*
-
-Build: gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer
-
-*/
-
 int main( int argc, char **argv )
 {
    char input[ MAX_STRING ];
