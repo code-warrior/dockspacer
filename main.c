@@ -15,10 +15,8 @@ int main( int argc, char **argv )
 
    printf( "\n\n%s How many spacers would you like? %s ", BLACK, BLACK );
 
-   // Get the user’s input, inside a container MAX_STRING in length
    fgets( input, sizeof( input ), stdin );
 
-   // Replace the newline char with the null character
    input[ strlen( input ) ] = '\0';
 
    // If the user’s input contains only one character (the null character assigned in
