@@ -3,12 +3,12 @@
 #include <string.h>
 
 #include "libs/stoi.h"
-#include "libs/dockspacer.h"
+#include "libs/create_dockspacer.h"
 #include "constants.h"
 
 /*
 
-Build: gcc -Wall main.c libs/dockspacer.c libs/stoi.c -o dockspacer
+Build: gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer
 
 */
 

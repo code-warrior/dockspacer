@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 #include "../constants.h"
-#include "dockspacer.h"
+#include "create_dockspacer.h"
 
 void create_dockspacer( int *where, int *amount )
 {
