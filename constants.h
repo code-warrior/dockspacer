@@ -2,8 +2,6 @@
 #define __CONSTANTS_H__
 
 #define RED       "\033[31m"
-#define BGYELLOW  "\033[43m"
-#define BGGRAY    "\033[100m"
 #define BOLDRED   "\033[31m\033[1m"
 #define BLACK   "\033[0m"
 
