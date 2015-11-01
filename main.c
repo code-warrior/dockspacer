@@ -15,8 +15,9 @@ Build: gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer
 int main( int argc, char **argv )
 {
    char input[ MAX_STRING ];
-   int amount;
-   int where = APPLICATION_AREA; // Set the application area as the default
+   int amount;                   // The amount of dockspacer(s) the user enters.
+   int where = APPLICATION_AREA; // The default area in The Dock where the
+                                 // dockspacer(s) will be added.
 
    printf( "\n\n%s How many spacers would you like? %s ", BLACK, BLACK );
 
