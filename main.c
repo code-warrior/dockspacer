@@ -56,25 +56,36 @@ int main( int argc, char **argv )
 
       input_length = strlen( choice );
 
-         if( strncmp( choice, "a", 1 ) == 0 ) {
-            create_dockspacer( &where, &amount );
-         }
-         else
-            if( strncmp( choice, "r", 1 ) == 0 ) {
       if( 1 == input_length ) {
+         // Copy the first character in the user’s choice for use in the switch
+         // statement.
          first_character_in_choice = choice[ 0 ];
+         switch (first_character_in_choice) {
+            case 'a': // The application area of The Dock
+               create_dockspacer( &where, &amount );
+
+               break;
+
+            case 'r': // The recycle bin area of The Dock
                where = RECYCLE_BIN_AREA;
                create_dockspacer( &where, &amount );
-            }
-            else
-               if( strncmp( choice, "q", 1 ) == 0 ) {
-                  printf( "Quitting\n" );
-                  exit( 0 );
-               }
-               else {
-                  printf( "Invalid character. Try again. (Enter 'q' to quit.)\n" );
-                  goto user_choice;
-               }
+
+               break;
+
+            case 'q':
+            case 'Q':
+               printf( "\n%s Quitting%s\n\n", RED, BLACK );
+               exit( 0 );
+
+               break;
+
+            default:
+               printf( "\n%s Invalid character. Try again. "
+                             "(Enter 'q' or 'Q' to quit.)%s\n\n", BOLDRED, BLACK );
+               goto user_choice;
+
+               break;
+         }
       }
       else {
          printf( "Invalid input. Try again. (Enter 'q' to quit.)\n" );
