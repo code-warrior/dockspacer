@@ -1,9 +1,9 @@
 #ifndef __CONSTANTS_H__
 #define __CONSTANTS_H__
 
-#define BLACK   "\033[0m"
-#define RED     "\033[31m"
-#define BOLDRED "\033[31m\033[1m"
+#define BLACK           "\033[0m"
+#define RED             "\033[31m"
+#define BOLDRED         "\033[31m\033[1m"
 
 #define INVALID_INPUT    -1
 #define MAX_STRING       80
