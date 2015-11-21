@@ -17,7 +17,11 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
         curl -OL https://github.com/code-warrior/dockspacer/raw/master/dockspacer
 
-2. Now, type the following and follow the instructions:
+2. Change permissions:
+
+        chmod 755 dockspacer
+
+3. Run the program:
 
         ./dockspacer
 
