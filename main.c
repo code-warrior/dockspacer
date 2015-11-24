@@ -33,6 +33,12 @@ int main( int argc, char **argv )
       exit( -1 );
    }
    else {
+      if( 0 == amount ) {
+         printf("\n%s You entered 0. Please run this program again...%s\n\n",
+                RED, BLACK);
+         exit( -1 );
+      }
+      printf("%d\n", amount);
       char choice[ 20 ];
       char first_character_in_choice;
       int input_length;
