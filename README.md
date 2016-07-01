@@ -33,15 +33,19 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
 2. Open The Terminal and navigate to the unzipped folder.
 
-3. Move the binary into your local environment:
+3. Copy the binary into your local environment:
 
         sudo cp dockspacer /usr/local/bin
 
-4. Run `dockspacer` from The Terminal:
+4. Change permissions:
+
+        chmod 755 /usr/local/bin/dockspacer
+
+5. Run `dockspacer` from The Terminal:
 
         dockspacer
 
-5. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
+6. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
 ## Build
 
