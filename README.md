@@ -1,4 +1,3 @@
-<meta charset="utf-8">
 # Dockspacer for Mac OS X [![Build Status](https://travis-ci.org/code-warrior/dockspacer.svg?branch=master)](https://travis-ci.org/code-warrior/dockspacer)
 
 v1.0.1
