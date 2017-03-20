@@ -63,3 +63,7 @@ or
 * Mac OS X 10.10
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
+
+# Credits
+
+DMG installer built using [`https://github.com/LinusU/node-appdmg`](https://github.com/LinusU/node-appdmg)
