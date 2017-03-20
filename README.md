@@ -28,7 +28,7 @@ Install via the: [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://g
 
         ./dockspacer
 
-3. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
+4. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
 ## Installation (Easy)
 
