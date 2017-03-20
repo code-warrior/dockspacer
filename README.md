@@ -12,6 +12,10 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
 ## Installation (Easiest)
 
+Install via the: [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://github.com/code-warrior/dockspacer/raw/master/dmg/dockspacer.dmg)
+
+## Installation (Easier)
+
 1. Download `dockspacer`:
 
         curl -OL https://github.com/code-warrior/dockspacer/raw/master/dockspacer
