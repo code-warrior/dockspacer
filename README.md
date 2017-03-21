@@ -1,6 +1,6 @@
 # Dockspacer for Mac OS X [![Build Status](https://travis-ci.org/code-warrior/dockspacer.svg?branch=master)](https://travis-ci.org/code-warrior/dockspacer)
 
-v1.0.1
+v1.0.2
 
 ![Dockspacer screenshot](img/dockspacer.png "Dockspacer screenshot")
 
@@ -11,6 +11,10 @@ This Terminal-level program creates empty items in your Dock — either in the A
 — Roy Vanegas (roy@thecodeeducators.com)
 
 ## Installation (Easiest)
+
+Install via the: [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://github.com/code-warrior/dockspacer/raw/master/dmg/dockspacer.dmg)
+
+## Installation (Easier)
 
 1. Download `dockspacer`:
 
@@ -24,7 +28,7 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
         ./dockspacer
 
-3. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
+4. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
 ## Installation (Easy)
 
@@ -59,3 +63,7 @@ or
 * Mac OS X 10.10
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
+
+# Credits
+
+DMG installer built using [`https://github.com/LinusU/node-appdmg`](https://github.com/LinusU/node-appdmg)
