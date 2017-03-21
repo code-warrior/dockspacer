@@ -1,0 +1,10 @@
+{
+  "title": "dockspacer",
+  "background": "../img/background.png",
+  "icon-size": 112,
+  "contents": [
+    { "x": 340 , "y": 200, "type": "file", "path": "../dockspacer" },
+    { "x": 780, "y": 200, "type": "link", "path": "/usr/local/bin" },
+    { "x": 1180, "y": 100, "type": "file", "path": "README.txt" }
+  ]
+}
