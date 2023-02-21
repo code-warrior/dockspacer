@@ -62,6 +62,8 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
    `make`
 
+### Using `gcc`
+
    `gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer`
 
 * Mac OS X 10.13
