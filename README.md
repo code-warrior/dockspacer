@@ -54,9 +54,9 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
 6. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
-## Build
 ---
 
+## Build from Source Code
 
 
 or
@@ -64,18 +64,18 @@ or
 
    `gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer`
 
-## Verified On...
 * Mac OS X 10.13
 * Mac OS X 10.12
 * Mac OS X 10.11
 * Mac OS X 10.10
 ---
 
+## Verified in the Following Versions of macOS
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
 
-# Credits
 ---
 
+## Credits
 
 DMG installer built using [`https://github.com/LinusU/node-appdmg`](https://github.com/LinusU/node-appdmg)
