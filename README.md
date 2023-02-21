@@ -20,15 +20,15 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
 1. Download `dockspacer`:
 
-        curl -OL https://github.com/code-warrior/dockspacer/raw/master/dockspacer
+   `curl -OL https://github.com/code-warrior/dockspacer/raw/master/dockspacer`
 
 2. Change permissions:
 
-        chmod 755 dockspacer
+   `chmod 755 dockspacer`
 
 3. Run the program:
 
-        ./dockspacer
+   `./dockspacer`
 
 4. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
@@ -42,15 +42,15 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
 3. Copy the binary into your local environment:
 
-        sudo cp dockspacer /usr/local/bin
+   `sudo cp dockspacer /usr/local/bin`
 
 4. Change permissions:
 
-        chmod 755 /usr/local/bin/dockspacer
+   `chmod 755 /usr/local/bin/dockspacer`
 
 5. Run `dockspacer` from The Terminal:
 
-        dockspacer
+   `dockspacer`
 
 6. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
@@ -58,11 +58,11 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 ---
 
 
-        make
 
 or
+   `make`
 
-        gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer
+   `gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer`
 
 ## Verified On...
 * Mac OS X 10.13
