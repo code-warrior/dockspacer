@@ -10,6 +10,8 @@ This Terminal-level program creates empty items in your Dock — either in the A
 
 — Roy Vanegas (roy@thecodeeducators.com)
 
+---
+
 ## Installation (Easiest)
 
 Install via the [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://github.com/code-warrior/dockspacer/raw/master/dmg/dockspacer.dmg)
@@ -29,6 +31,8 @@ Install via the [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://gi
         ./dockspacer
 
 4. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
+
+---
 
 ## Installation (Easy)
 
@@ -51,6 +55,8 @@ Install via the [DMG installer![](img/dockspacer-dmg-screenshot.png)](https://gi
 6. Your computer will flash when it’s done. This is the result of restarting The Dock and is normal.
 
 ## Build
+---
+
 
         make
 
@@ -63,9 +69,13 @@ or
 * Mac OS X 10.12
 * Mac OS X 10.11
 * Mac OS X 10.10
+---
+
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
 
 # Credits
+---
+
 
 DMG installer built using [`https://github.com/LinusU/node-appdmg`](https://github.com/LinusU/node-appdmg)
