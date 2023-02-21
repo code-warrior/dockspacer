@@ -68,7 +68,7 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
 ---
 
-## Verified in the Following Versions of macOS
+## Verified on the Following Versions of macOS
 
 * macOS 12.6 (Monterey) [Intel]
 * macOS 11 (Big Sur) [Intel]
