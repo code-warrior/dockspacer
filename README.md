@@ -66,13 +66,17 @@ Install via the [DMG installer![Screen shot of dockspacer.dmg icon](img/dockspac
 
    `gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer`
 
-* Mac OS X 10.13
-* Mac OS X 10.12
-* Mac OS X 10.11
-* Mac OS X 10.10
 ---
 
 ## Verified in the Following Versions of macOS
+
+* macOS 12.6 (Monterey) [Intel]
+* macOS 11 (Big Sur) [Intel]
+* macOS 10.14 (Mojave)
+* macOS 10.13 (High Sierra)
+* macOS 10.12 (Sierra)
+* Mac OS X 10.11 (El Capitan)
+* Mac OS X 10.10 (Yosemite)
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
 
