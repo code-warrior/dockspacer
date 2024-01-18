@@ -59,6 +59,8 @@ or
         gcc -Wall main.c libs/create_dockspacer.c libs/stoi.c -o dockspacer
 
 ## Verified On...
+
+* Mac OS X 13.6 (Intel)
 * Mac OS X 10.13
 * Mac OS X 10.12
 * Mac OS X 10.11
