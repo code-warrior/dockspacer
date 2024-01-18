@@ -68,6 +68,6 @@ or
 * Mac OS X 10.9.4
 * Mac OS X 10.8.5
 
-# Credits
+## Credits
 
 DMG installer built using [`https://github.com/LinusU/node-appdmg`](https://github.com/LinusU/node-appdmg)
